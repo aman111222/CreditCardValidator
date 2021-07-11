@@ -4,7 +4,8 @@
 
 using namespace std;
 
-bool isNumberString(const string& s) {
+bool isNumberString(const string& s)
+{
     int len = s.length();
     for (int i = 0; i < len; i++) {
         if (s[i] < '0' || s[i] > '9')
@@ -13,10 +14,12 @@ bool isNumberString(const string& s) {
     return true;
 }
 
+//This program uses the Luhn Algorigthm to validate a CC number.
+
 int main() {
     string ccNumber;
     
-    cout << "This program uses the Luhn Algorigthm to validate a CC number." << endl;
+    cout << "This is simple program for validating your credit card number." << endl;
     cout << "You can enter 'exit' anytime to quit." << endl;
     
     while (true) {
